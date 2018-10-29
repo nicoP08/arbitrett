@@ -1,0 +1,59 @@
+/*RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,tr,td,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{margin:0;padding:0;border:0;outline:0;font-size:100%}ol,ul{list-style:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{display:block}
+/*/RESET*/
+
+html{
+    background: #ECECEC;
+    font-family: arial;
+    font-size:16px;
+}
+
+.header{
+    text-align: center;
+    font-size: 20px;
+    background: #2c3e50;
+    padding: 10px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header h3{
+    margin-top:0;
+    color: #fde3a7;
+}
+
+form{
+    text-align: left;
+}
+
+#form{
+    text-align:center;
+    display: inline-block;
+}
+button{
+    background: #d64541;
+    color: #ffffff;
+    border : 0;
+    cursor: pointer;
+    padding: 5px;
+}
+#button{
+    display: inline-block;
+    text-align: center;
+}
+
+#error{
+    background: red;
+    color: white;
+    text-align: center;
+    padding 5px;
+    
+}
