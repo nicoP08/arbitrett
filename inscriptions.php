@@ -1,4 +1,3 @@
-
 <?php 
 include './includes/header.php';
 include './includes/navbar.php';
@@ -60,7 +59,7 @@ if(!empty($_POST['pseudo'])   && !empty($_POST['email'])  && !empty($_POST['pass
 
   if($password != $password_confirm){
     header('location: inscriptions.php?error=1&pass=1');
-    return();
+    
 
     $req = $db->prepare("SELECT count(*) as numberEmail FROM membres WHERE email = ?");
     $req -> execute(array($email));
@@ -68,7 +67,7 @@ if(!empty($_POST['pseudo'])   && !empty($_POST['email'])  && !empty($_POST['pass
     while($email_verification = $req ->fetch()){
       if($email_verification['numberEmail']!= 0){
         header('location: inscriptions.php?error=1&email=1' );
-        return();
+        
       }
     }
   }
@@ -85,7 +84,7 @@ $req = $db -> prepare("INSERT INTO membres(pseudo, email, mdp, cle) VALUES(?, ?,
 $req -> excecute(array($pseudo, $email, $password, $secret));
 
 header('location: inscriptions.php?/success=1' );
-return();
+
 
 ?>
 
